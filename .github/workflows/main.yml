@@ -20,12 +20,8 @@ jobs:
         name: android12-5.10_kernelsu.ko
         path: .
 
-    - uses: dawidd6/action-download-artifact@v3
-      with:
-        repo: liaoke01/BootIMGExtractAction
-        branch: main
-        workflow: BootIMGExtractAction.yml
-        workflow_conclusion: success
+    -name: Download boot
+      run: wegt https://59-47-225-68.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-842/eeab9c2f/1817805644-0/eeab9c2ffa7eb99029a59313fdbebf4a/c-m6?v=5&t=1710587953&s=1710587953a03879f4eb5511abeb301e51898639e7&r=KC0433&bzc=1&bzs=1817805644&filename=boot.img&x-mf-biz-cid=1ce9d3c3-2012-4fe8-9fc8-b67124e885a6-47df1e&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=650e90a3-8760-4563-b31f-09fbab6fc6f7-1-50111d3b1 -O boot.img
         name: boot.img
         path: .
 
